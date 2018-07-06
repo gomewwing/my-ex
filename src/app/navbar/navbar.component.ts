@@ -4,14 +4,17 @@ import { Component, OnInit } from '@angular/core';
 
 
 @Component({
-  selector: 'posts',
-  templateUrl: './posts.component.html',
-  styleUrls: ['./posts.component.css']
+  selector: 'navbar',
+  templateUrl: './navbar.component.html',
+  styleUrls: ['./navbar.component.css']
 })
-export class PostsComponent implements OnInit {
+export class NavbarComponent implements OnInit {
 
-  posts: any = [];
-
+  navLinks = [
+    {name:"HOME", link:"home"},
+    {name:"실시간 검색어", link:"search"},
+    {name:"오늘의 날씨", link:"weather"},
+  ];
   constructor() { }
 
   ngOnInit() {

@@ -57,11 +57,11 @@ router.get('/test', (req, res)=>{
             // console.log(arr);
             
         })
-        
+        // async await..
     setTimeout(function(){
         res.json(arr);
         
-    }, 2000);
+    }, 1000);
 
 })
 

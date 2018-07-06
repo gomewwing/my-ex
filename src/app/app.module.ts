@@ -2,9 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { SearchComponent } from './posts/search/search.component';
-import { WeatherComponent } from './posts/weather/weather.component';
-import { PostsComponent } from './posts/posts.component';
+import { SearchComponent } from './navbar/search/search.component';
+import { WeatherComponent } from './navbar/weather/weather.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 import { PostsService } from './posts.service';
 
@@ -14,13 +14,15 @@ import { RouterModule } from '@angular/router';
 
 import { MatListModule, MatIconModule, MatCheckboxModule, MatTabsModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HomeComponent } from './navbar/home/home.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    PostsComponent,
+    NavbarComponent,
     SearchComponent,
+    HomeComponent,
     WeatherComponent
   ],
   imports: [
@@ -29,8 +31,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FormsModule,
     RouterModule.forRoot([
       {
-        path:'',
-        component: PostsComponent
+        path:'home',
+        component: HomeComponent
       },
       {
         path:'search',
