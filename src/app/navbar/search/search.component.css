@@ -1,0 +1,7 @@
+.mat-nav-list {
+    -webkit-column-count: 2; /* chrome, opera, safari */
+    -moz-column-count: 2; /* firefox */
+
+}
+
+.mat-nav-list .mat-list-item {}

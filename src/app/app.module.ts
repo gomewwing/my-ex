@@ -12,7 +12,7 @@ import { HttpModule } from '@angular/http';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
-import { MatListModule, MatIconModule, MatCheckboxModule, MatTabsModule } from '@angular/material';
+import { MatListModule, MatIconModule, MatCheckboxModule, MatTabsModule, MatDividerModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './navbar/home/home.component';
 
@@ -47,6 +47,7 @@ import { HomeComponent } from './navbar/home/home.component';
     MatIconModule,
     MatCheckboxModule,
     MatTabsModule,
+    MatDividerModule,
     BrowserAnimationsModule
   ],
   providers: [PostsService],

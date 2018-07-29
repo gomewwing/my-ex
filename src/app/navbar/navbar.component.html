@@ -10,9 +10,9 @@
         </ng-template>
     </mat-tab>
 </mat-tab-group> -->
-
-<nav mat-tab-nav-bar>
-    <a mat-tab-link
+<div>
+<nav  mat-tab-nav-bar>
+    <a  mat-tab-link
         *ngFor="let link of navLinks"
         [routerLink]="link.link"
         routerLinkActive #rla="routerLinkActive"
@@ -20,7 +20,7 @@
         {{link.name}}
     </a>
 </nav> 
-
+</div>
 <!--
 [postsrouterLink]="search"
 routerLinkActive #rla="routerLinkActive"
